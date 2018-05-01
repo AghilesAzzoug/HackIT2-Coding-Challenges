@@ -1,0 +1,20 @@
+<html>
+<title>[Hack-IT][FK]</title>
+
+<body>
+	<br>
+	<input id="nb" type="number" value="" placeholder="Number of items ... ">
+	<input id="price" type="number" value="" placeholder="Price ... ">
+	<input id="cost" type="number" value="" placeholder="Cost" disabled>
+	<button onclick=setCost();>Calculate transport cost</button>
+	<br><br><br><br><br><br>
+</body>
+
+<script>
+	function setCost(){
+		var cost = document.getElementById("cost");
+		cost.value = Math.trunc(calculateCost());
+	}
+</script>
+<script src="hackIT.js"></script>
+</html>
